@@ -49,4 +49,9 @@ body {
     border-radius: 45%; 
     object-fit: cover;
     transition: 2s;
+    transition: transform 0.5s;
+}
+.container span img:hover{
+  transform: scale(1.5);
+  
 }
