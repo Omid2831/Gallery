@@ -8,7 +8,8 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .container {
   position: relative;
@@ -21,6 +22,7 @@ body {
   transform: perspective(1000px);
   animation: rotate 30s linear infinite;
   cursor: pointer;
+  
 }
 @keyframes rotate {
   0% {
@@ -52,6 +54,5 @@ body {
     transition: transform 0.5s;
 }
 .container span img:hover{
-  transform: scale(1.5);
-  
+  transform: scale(1.5); 
 }
