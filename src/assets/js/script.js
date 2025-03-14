@@ -169,3 +169,36 @@ const animateElements = () => {
 
 // Call the function after DOM is loaded
 document.addEventListener("DOMContentLoaded", animateElements);
+
+// Simple YouTube video and music interaction
+const youtubeIframe = document.querySelector(".video-container iframe");
+
+// Listen for messages from the YouTube iframe
+window.addEventListener("message", function (event) {
+  // Only handle messages from YouTube
+  if (event.origin !== "https://www.youtube.com") return;
+
+  const data = JSON.parse(event.data);
+
+  // If video starts playing
+  if (
+    data.event === "infoDelivery" &&
+    data.info &&
+    data.info.playerState === 1
+  ) {
+    bgMusic.pause();
+    isMusicPlaying = false;
+    musicToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+  }
+
+  // If video is paused or ended
+  if (
+    data.event === "infoDelivery" &&
+    data.info &&
+    (data.info.playerState === 0 || data.info.playerState === 2)
+  ) {
+    bgMusic.play();
+    isMusicPlaying = true;
+    musicToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+  }
+});
