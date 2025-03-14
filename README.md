@@ -2,6 +2,8 @@
 
 An interactive and modern gallery website featuring 3D effects, parallax scrolling, and a beautiful user interface.
 
+Created and maintained by Omid Mehrabi (Omid_mhr).
+
 ## ✨ Features
 
 - 🎨 3D Interactive Gallery
@@ -106,6 +108,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-For questions or collaboration, please open an issue in the repository.
+Created by Omid Mehrabi (Omid_mhr). For questions or collaboration:
+
+- GitHub: [@Omid2831](https://github.com/Omid2831)
+- Instagram: [@omid82mhrdeveloper](https://www.instagram.com/omid82mhrdeveloper)
+- LinkedIn: [Omid Mehrabi](https://www.linkedin.com/in/omid-mehrabi-2638792a5/)
+
+Or open an issue in the repository.
 
 ---
